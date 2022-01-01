@@ -1,2 +1,2 @@
-# Text_Adventure_Palooza
+# Text Adventure Palooza
 Text Adventure in Python
