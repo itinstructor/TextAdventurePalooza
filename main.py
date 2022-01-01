@@ -46,7 +46,7 @@ def diamond_room():
     print("(2) Just go through the door.")
 
     # take input()
-    answer = input(">")
+    answer = input(">> ")
 
     if answer == "1":
         # the player is dead, call game_over() function with the "reason"
@@ -74,7 +74,7 @@ def monster_room():
     print("(2) Kill the monster and show your courage!")
 
     # take input()
-    answer = input(">")
+    answer = input(">> ")
 
     if answer == "1":
         # lead him to the diamond_room()
@@ -100,7 +100,7 @@ def bear_room():
     print("(2) Taunt the bear.")
 
     # Get user input
-    answer = input("> ")
+    answer = input(">> ")
 
     if answer == "1":
         # The player is dead!
@@ -137,7 +137,7 @@ def start():
     for i in range(4):
         print(first_room[i])
 
-    action = int(input("> "))
+    action = int(input(">> "))
 
     print(first_room_rewards[action - 1])
     if action - 1 == 1:
