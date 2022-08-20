@@ -1,7 +1,7 @@
 """
     Name: text_adventure_palooza.py
     Author: William A Loring
-    Created: 12/29-21
+    Created: 12/29/2021
     Purpose: A text adventure tutorial
 """
 import sys
@@ -12,7 +12,7 @@ def main():
     start()
 
 
-#---------------------- PLAY AGAIN -----------------------#
+#---------------------------- PLAY AGAIN ----------------------------#
 def play_again():
     print("\nDo you want to play again? (y or n)")
 
@@ -27,7 +27,7 @@ def play_again():
         sys.exit()
 
 
-#---------------------- GAME OVER -----------------------------#
+#---------------------------- GAME OVER -----------------------------#
 def game_over(reason):
     # Print the "reason" in a new line (\n)
     print("\n" + reason)
@@ -36,7 +36,7 @@ def game_over(reason):
     play_again()
 
 
-#---------------------- DIAMOND ROOM ----------------------------#
+#------------------------- DIAMOND ROOM ----------------------------#
 def diamond_room():
     # some prompts
     print("\nYou are now in a room filled with diamonds!")
@@ -62,7 +62,7 @@ def diamond_room():
         game_over("Go and learn how to type a number.")
 
 
-#---------------------- MONSTER ROOM -----------------------#
+#----------------------------- MONSTER ROOM ----------------------------#
 def monster_room():
     # some prompts
     # '\n' is to print the line in a new line
@@ -88,9 +88,11 @@ def monster_room():
         monster_room()
 
 
-#-------------------------- BEAR ROOM --------------------------#
+#------------------------------ BEAR ROOM -------------------------------#
 def bear_room():
-    # Tell the story to this point
+    """
+        Tell the store of the bear room
+    """
     # Prompt the user for input
     print("\nThere is a bear here.")
     print("Behind the bear is another door.")
@@ -145,7 +147,8 @@ def start():
     else:
         game_over()
 
-        # If a standalone program, call the main function
-        # Else, use as a module
+
+# If a standalone program, call the main function
+# Else, use as a module
 if __name__ == '__main__':
     main()
